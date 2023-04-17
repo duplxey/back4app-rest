@@ -22,7 +22,9 @@ export default function Home() {
     <>
       <main>
         <Container maxW="container.lg">
-          <Heading as="h1" my="4">back4app-rest</Heading>
+          <Heading as="h1" my="4">
+            <Link as={NextLink} href="https://github.com/duplxey/back4app-rest">back4app-rest</Link>
+          </Heading>
           {isLoading ? (
             <Spinner size="lg"/>
           ) : (
