@@ -34,7 +34,7 @@ export default function Home() {
                   <CardBody>
                     <Stack spacing="3">
                       <Heading size="md">
-                        <Link as={NextLink} href={article.get("shrug")}>
+                        <Link as={NextLink} href={article.get("slug")}>
                           {article.get("title")}
                         </Link>
                       </Heading>
