@@ -7,14 +7,14 @@ import {useEffect, useState} from "react";
 export default function Article() {
 
   const router = useRouter();
-  const {shrug} = router.query;
+  const {slug} = router.query;
 
   const [isLoading, setIsLoading] = useState(true);
   const [article, setArticle] = useState(null);
 
   const getArticle = async () => {
     const query = new Parse.Query("Article");
-    query.equalTo("shrug", shrug);
+    query.equalTo("slug", slug);
     const results = await query.find();
     setIsLoading(false);
     if (results.length === 0) return;
