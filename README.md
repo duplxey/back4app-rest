@@ -2,7 +2,7 @@
 
 This repository demonstrates how to use automatically generated REST API with Back4app.
 
-To learn more read the [article](#).
+To learn more read the [article](https://blog.back4app.com/how-to-build-a-rest-api/).
 
 ## Project Setup
 
